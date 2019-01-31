@@ -1,0 +1,403 @@
+﻿html, body { height: 100%; margin: 0; overflow: hidden; padding: 0; font-family: calibri, Sans-Serif; font-size:14px; }
+#appLayout { height: 100%; }
+@font-face{ font-family:'aller';src:url('/Style%20Library/themes/Intranet/fonts/Aller.eot');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller.eot?#iefix')format('embedded-opentype');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller.otf');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller.ttf');src:url('/Style%20Library/themes/Intranet/fonts/Aller.woff');}
+@font-face{ font-family:'allerLightItalic';src:url('/Style%20Library/themes/Intranet/fonts/Aller-LightItalic.eot');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-LightItalic.eot?#iefix')format('embedded-opentype');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-LightItalic.otf');src:url('/Style%20Library/themes/Intranet/fonts/Aller-LightItalic.ttf');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-LightItalic.woff');}
+@font-face{ font-family:'allerLight';src:url('/Style%20Library/themes/Intranet/fonts/Aller-Light.eot');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-Light.eot?#iefix')format('embedded-opentype');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-Light.otf');src:url('/Style%20Library/themes/Intranet/fonts/Aller-Light.ttf');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-Light.woff');}
+@font-face{ font-family:'allerBold"Italic';src:url('/Style%20Library/themes/Intranet/fonts/Aller-BoldItalic.eot');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-BoldItalic.eot?#iefix')format('embedded-opentype');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-BoldItalic.otf');src:url('/Style%20Library/themes/Intranet/fonts/Aller-BoldItalic.ttf');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-BoldItalic.woff');}
+@font-face{ font-family:'allerBold';src:url('/Style%20Library/themes/Intranet/fonts/Aller-Bold.eot');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-Bold.eot?#iefix')format('embedded-opentype');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-Bold.otf');src:url('/Style%20Library/themes/Intranet/fonts/Aller-Bold.ttf');
+src:url('/Style%20Library/themes/Intranet/fonts/Aller-Bold.woff');}
+#leftCol { display: block; }
+#RightCol { display: block; }
+#Central{ width: 60%; display: block; }
+#footer{ height: 20px; background-color: #535353; color: #ffffff; text-align: center; }
+#Header{ height: 70px; background-color:  #667F00; border-bottom: 1px solid #fff; }
+a.detalles{ color:  #667F00 !important; display: block; margin: 10px; line-height:15px; }
+#Header a.detalles img{ max-height:50px; }
+#Header2 { padding-top: 20px; color: #FFFFFF; font-weight: bold; font-size: 25px; font-family:'aller', calibri, Sans-Serif; }
+#Header4 { padding: 0px !important; }
+.Footer2 { background-color:  #667F00; padding: 2px; height: 5% !important; }
+#viewsChart { width: 550px; height: 550px; }
+#myTableNode{ height: 100%; }
+#header{ height: 70px; width: 100%; }
+#lefpanel{ height: 25%; }
+.menuMovil{ margin:10px; }
+/*div.mainSection div{ padding:2px 8px; }
+div.mainSection div b{ color:#667F00; }*/
+#popup1{ padding:2px 8px; }
+#popup1 b{ color:#667F00; }
+#popup1 .headerinf{ color: #667F00 !important; font-size: 18px; }
+#popup1 .hzLine { border: none; border-top: 1px solid #333333; margin-top: 6px; margin-bottom: 6px; }
+    
+.la { font: normal normal normal 16px/1 LineAwesome; font-size: inherit; text-decoration: inherit; text-rendering: optimizeLegibility;
+text-transform: none; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; }
+.b-iconMas{ width:48px; height:48px; display:block; }
+#infolabel{ height: 3.5%; background-color:  #667F00; color: #ffffff; font-size: 14px; text-align: center; display:none; }
+.infolabel{ width: 25%; border-color: #ffffff; border-right-style: solid; font-weight: bold !important; text-overflow: ellipsis; }
+
+
+
+.nav {
+    padding: 5px 10px;
+    background: #4479BA;
+    color: #FFF;
+    border-radius: 5px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+#HomeButton {
+    position: absolute;
+    top: 95px;
+    left: 20px;
+    z-index: 5;
+}
+#layerListPane{
+    width:25%;
+}
+#Tabla1{ height: 65%; }
+#overviewMap1{
+    height: 20%;
+    z-index: -2;
+}
+#overviewMapDiv1{
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+#overviewMapDiv{
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+#informacion{ display:none; }
+#popup1{ /*background-color: #f7f7f7;*/ height: 31.5%; color: #000; font-size: 14px; !important; }
+
+#myTableNode{
+
+    font-size: 9px; !important;
+    padding: 1px 1px;
+    z-index: -1;
+
+}
+#Acordeon{ height: 94.8%; font-size: 14px; !important; font-weight: normal; color: #535353; }
+#Acordeon .dijitAccordionArrow{ display:none; }
+.fuente{ font-weight:bold; }
+.otros
+{
+    font-size: 14px !important;
+    background-color: #ccc;
+    height: 10%;
+    cursor: pointer;
+    border-top: 2px solid #ffffff !important;
+    border-bottom: 2px solid #ffffff !important;
+    text-align: left !important;
+}
+a.fill-div:hover,.otros:hover, .otros:focus{
+    background :  #667F00;
+    color:#FFFFFF;
+}
+a.referencia{
+    color:  #667F00 !important;
+    font-size: 12px  !important;
+    text-align: left !important;
+    text-indent:5px !important;
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    padding-top: 5px;
+    line-height:15px;
+    border-right: solid #667F00 !important;
+    font-weight: bold;
+}
+
+.verticalLine {
+    border-right: solid #667F00 ;
+    border-right-width: 1px;
+    border-right-style: ridge;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-left: 3px;
+
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 90%;
+    text-decoration: none;
+    color: #000;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.infoIcons{
+    width: 25%;
+}
+#magnitud{ background-position: center; background-image: url('images/magnitud-64.svg'); background-repeat: no-repeat; background-color:#ccc;
+border-color: #fff; border-right-style: solid; text-align: center; line-height: 50px; font-weight: bold; color: #000; }
+#intensidad{ background-image: url('images/intensidad-64.svg'); background-position: center; background-repeat: no-repeat; background-color:#ccc;
+border-color: #fff; border-right-style: solid; text-align: center; line-height: 50px; font-weight: bold; color: #000; }
+#profundidad{ background-position: center; background-image: url('images/profundidad-64.svg'); background-repeat: no-repeat; background-color:#ccc; 
+border-color: #fff; border-right-style: solid; text-align: center; line-height: 50px; font-weight: bold; color: #000; }
+#localizacion{ background-position: center; background-image: url('images/localizacion-64.svg'); background-repeat: no-repeat; text-align: center;
+background-color:#ccc; line-height: 20px; font-weight: bold; color: #000; border-color: #fff; border-right-style: solid; }
+#leyendaMagnitud{
+    position: absolute;
+    bottom:45px;
+    left: 55%;
+    width: 140px;
+    height: 85px;
+    background-color: #FFFFFF;
+
+    background-image: url('images/magnitud.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 111%;
+    z-index: 3;
+}
+#leyendaProfundidad{position: absolute;
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+    width: 200px;
+    height: 130px;
+    background-image: url('images/profundidad.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    z-index: 4;
+
+}
+
+#titulo{ height: 7%; display:block; color: #FFF; text-align: center; font-weight: bold; background-color:#667F00 !important; }
+#masinformacion{ position: absolute; top: 1.3%; right: 1px; width: 48px; height: 48px; z-index: 5; background-color:#93bc04; border-radius: 24px; }
+#masinformacion:hover{ background-color:#646464; }
+#masinformacion .b-iconMas .mas{ margin-right: 5px; width: 48px; font-size: 48px; display: inline-block; text-align: center; vertical-align: middle;
+color:#fff; font-weight:bold; line-height: 48px; }
+#masinformacion a:hover{ text-decoration:none; }
+.esri-feature-table-menu .esri-feature-table-menu-item{ font-size:12px; }
+body { animation-duration: 0.001s; }
+.claro .dijitAccordionInnerContainerHover .dijitAccordionTitle{ color:#f2ffc3; }
+.claro .dijitAccordionContainer .dijitAccordionChildWrapper { background-color: #ffffff; border: none;  margin: 0; }
+.claro .dijitAccordionContainer .dijitAccordionContainer-child { padding: 2px; }
+.esriLayerList .esriToggleButton { padding: 0; right: 5px; top: 10px; position: relative; color:#667F00; }
+.esriLayerList .esriContainer { background-color: #f1f1f1 !important; }
+.esriLayerList .esriLabel, .esriLayerList .esriLegend { color: #333; }
+.claro .dijitTitlePaneContentInner { padding: 2px; }
+.otros { background-color: #f1f1f1; height: 10%; cursor: pointer; border-top: 1px solid #ffffff !important; 
+border-bottom: 1px solid #ffffff !important; text-align: left !important; }
+.claro .dijitTitlePaneTitle{ background:#646464; }
+#Header3{ padding-left:0; }
+.infoContacto{ font-size:13px; }
+h3.contacto{ font-size:16px; font-weight:normal; color:#667F00; }
+.claro .dijitTextBox .dijitInputField { padding: 0px 0px; }
+
+
+@media only screen and  (min-device-width: 600px) {
+#Info{ display: none !important; }
+.hzLine { border: none; border-top: 1px solid #333333; margin-top: 6px; margin-bottom: 6px; }
+.headerinf { font-weight: bold; color: #667F00 !important; font-size: 18px; }
+
+}
+
+.claro .dijitMenuItem {
+    text-align: center;
+    width: 640px !important;
+    height: 40px;
+    background-color: #667F00 !important;
+    color: white !important;
+    font-size: small;
+}
+#Central_dropdown{
+    visibility: hidden !important;
+}
+.claro .dijitTooltipAbove .dijitTooltipConnector{
+    visibility: hidden !important;
+}
+.claro .dijitTooltipContainer
+{
+    background-color:#f1f1f1;
+    background-image: none;
+}
+
+.dgrid-hider-toggle{
+    visibility: hidden;
+}
+
+.Shakemap{border-radius:50%;height:30px;width:30px;text-align:center;line-height:30px;}
+.ShakemapTitulo{line-height:30px !important;}
+.shakeMapI{background-color:RGB(234,236,255);}
+.shakeMapII{background-color:RGB(176,218,246);}
+.shakeMapIII{background-color:RGB(176,218,246);}
+.shakeMapIV{background-color:RGB(123,255,210);}
+.shakeMapV{background-color:RGB(152,254,109);}
+.shakeMapVI{background-color:RGB(254,231,22);}
+.shakeMapVII{background-color:RGB(254,173,19);color:#fff;}
+.shakeMapVIII{background-color:RGB(254,101,0);color:#fff;}
+.shakeMapIX{background-color:RGB(235,3,0);color:#fff;}
+.shakeMapX{background-color:RGB(255,0,0);color:#fff;}
+
+.shakeMapTxtI:before{content: "-No sentido";}
+.shakeMapTxtII:before{content: "-Débil";}
+.shakeMapTxtIII:before{content: "-Débil";}
+.shakeMapTxtIV:before{content: "-Leve ";}
+.shakeMapTxtV:before{content: "-Moderado";}
+.shakeMapTxtVI:before{content: "-Fuerte";}
+.shakeMapTxtVII:before{content: "-Muy Fuerte";}
+.shakeMapTxtVIII:before{content: "-Severo";}
+.shakeMapTxtIX:before{content: "-Violento";}
+.shakeMapTxtX:before{content: "-Extremo";}
+.ShakemapL0{display: none;}
+.Espacio0:after{ content: '\A';}
+
+/*
+.dijitPopup{
+    position: fixed !important;
+    padding-top: 63em !important;
+    padding-left: 0% !important;
+}
+*/
+
+@media only screen and (max-device-width: 600px) {
+/*#masinformacion { position: absolute; top: 0%; right: -11%; width: 35%; height: 11%; }*/
+
+    #Tabla1{
+        height: 65%;
+    }
+    .claro .dijitMenuItem {
+         text-align: center;
+         width: 640px;
+         height: 150px;
+         background-color: #667F00 !important;
+        color: white !important;
+        font-size: small;
+     }
+    .claro .dijitMenuItem:hover {
+        background-color: #667F00 !important;
+    }
+    .claro .dijitMenuItemHover {
+         background-color: #667F00 !important;
+     }
+
+
+    .dijitMenuItemLabel {
+        font-size: 35px !important;
+    }
+    .claro .dijitMenu {
+        width: 640px;
+        height: 150px;
+
+    }
+    .dijitMenuItem {
+
+    }
+
+    .classmobile{
+        display: block !important;
+    }
+
+    #leftCol {
+        width: 100%;
+        display: none;
+        font-size: large;
+
+
+    }
+    #RightCol{
+        width: 100% !important;
+        left: 0px !important;
+        display: none;
+        font-size: large;
+    }
+    #Central{
+        width: 100%;
+        font-size: large;
+    }
+    .hzLine {
+        border: none;
+        border-top: 1px solid #333333;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    .headerinf {
+        font-weight: bold;
+        color: #667F00 !important;
+        font-size: 18px;
+    }
+    #Central_dropdown{
+        visibility: hidden !important;
+    }
+    .claro .dijitTooltipAbove .dijitTooltipConnector{
+        visibility: hidden !important;
+    }
+    .claro .dijitTooltipContainer
+    {
+        background-color:#f1f1f1;
+        background-image: none;
+    }
+    .dgrid-hider-toggle{
+        visibility: hidden;
+    }
+	/*
+    .dijitPopup{
+        position: fixed !important;
+        padding-top: 150% !important;
+        padding-left: 0% !important;
+    }
+*/
+
+    /*.MapaBaseClass {
+       display: none !important;
+   }
+
+   #Header{ height: 200px; }
+   #Basemaps2{ display: block !important; }
+   */
+}
+@media only screen and (max-device-width: 380px) {
+.dijitIcon{ width: 24px; font-size: 24px; }
+}
+@media only screen and (max-device-width: 1025px) {
+#leyendaProfundidad{ left: 15%; }
+#leyendaMagnitud{ right: 15%; }
+}
+@media only screen and (max-device-height: 600px) {
+#infolabel{ height: 4%; }
+}
+
+@media (max-width: 767px){
+.hidden-xs { display: none; }
+}
+
+#RightCol #dijit_layout_ContentPane_6{ height:5% !important; }
+.grisForm{ background:#f1f1f1 !important; padding:4px; margin-bottom:1px; }
+.grisForm .lblForm{ font-weight:normal; display:block; }
+#myform .dijitButton .dijitNoIcon{ display:none; }
+#myform .dijitButton{ float:right; }
+#myform .dijitTextBox { width: 100%; }
+#myform .lblFiltros{ padding: 4px; display: block; font-size: 13px; }
+    
+
+
+
+
+
+

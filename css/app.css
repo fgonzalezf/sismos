@@ -1,0 +1,167 @@
+﻿html, body, #map { border: 0; margin: 0; padding: 0; height: 100%; }
+.instructions { position: absolute; top: 0; right: 0; width: 25%; height: auto; z-index: 100; border-radius: 0 0 0 8px;
+background: white; padding: 0 5px; }
+h1 { text-align: center; margin: 4px 0; }
+#Header2 h1 { text-align: left; margin: 0; font-size:25px; }
+.claro .dijitBorderContainer-dijitContentPane { background-color: rgba(125, 190, 250, 0); }
+.dijitContentPane { overflow: hidden; }
+#Botones1, #Botones2, #Botones3,#Botones4,#Botones5{ border: 1px rgba(181, 188, 199, 0) solid; }
+#Botones4{ color: #ffffff; font-size: 30px; }
+.claro .dijitAccordionInnerContainer { border:1px solid  #667F00; background-color:  #667F00; background-image:none; }
+.claro .dijitButton .dijitButtonNode { border:1px solid  #667F00; background-color:  #667F00 !important;
+color: white !important; background-image:none; }
+.claro .dijitDropDownButton .dijitButtonNode, .claro .dijitComboButton .dijitButtonNode, 
+.claro .dijitToggleButton .dijitButtonNode{ border:1px solid  #ffffff; background-color:  #667F00 !important;
+color: white !important; background-image:none; }
+.claro .dijitAccordionTitle,.claro .dijitAccordionInnerContainerSelected .dijitAccordionTitle{ color: #ffffff;
+background-image:none; font-weight: bold; }
+.claro .dijitDialogTitleBar { background-color: #667F00 !important; }
+.claro .MapaBaseClass .dijitButton .dijitButtonNode, .claro  .MapaBaseClass .dijitDropDownButton .dijitButtonNode, 
+.claro .MapaBaseClass .dijitComboButton .dijitButtonNode, .claro .MapaBaseClass .dijitToggleButton .dijitButtonNode { 
+padding: 10px !important; }
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+.material-icons.md-14 { font-size: 14px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("images/SGC_Loading.gif") no-repeat center center  #FFFFFF
+}
+
+.esri-feature-table .esri-feature-table-menu{
+    background-color:  #667F00 !important;
+    color: #ffffff !important;
+}
+.esri-feature-table .esri-feature-table-menu .dijitDropDownButton .dijitButtonContents{ color: #ffffff !important;}
+.esri-feature-table .esri-feature-table-grid .dgrid-row .dgrid-cell { padding: 2px !important; font-size:11px !important; }
+.esri-feature-table .esri-feature-table-grid .dgrid-row:hover .dgrid-cell, 
+.esri-feature-table .esri-feature-table-grid .dgrid-row:active .dgrid-cell, 
+.esri-feature-table .esri-feature-table-grid .dgrid-row:focus .dgrid-cell, 
+.esri-feature-table .esri-feature-table-grid .dgrid-row::selection .dgrid-cell { color: #ffffff !important; }
+.esri-feature-table .esri-feature-table-grid .dgrid-row-odd { background-color: #fff; }
+.esri-feature-table .esri-feature-table-grid .dgrid-header .dgrid-cell{ font-weight: bold !important; }
+.esriPopup.dark .titlePane, .dj_ie7 .esriPopup.dark .titlePane .title { color:#333; font-weight:700; }
+.esriPopup.dark .titlePane { border-bottom:1px solid #121310; }
+.esriPopup.dark a { color: #667F00; }
+.dojoxGridHeader { display:none; !important; }
+.esri-feature-table .dgrid-row:hover { background-color:  #646464 !important; color:#ffffff !important; }
+.esri-feature-table .ui-state-active { background-color:  #93bc04 !important; color:#ffffff !important; }
+
+
+.esriPopup.dark .titlePane, .dj_ie7 .esriPopup.dark .titlePane .title, .esriPopup.dark .contentPane, 
+.esriPopup.dark .actionsPane { background-color: #667F00 !important; color:#000; }
+.esriPopup.dark a{
+    color:#000 !important;
+}
+.esriLayerList .esriContainer {
+    background-color: #667F00 !important;
+    color: #ffffff !important;
+    border-top: 2px solid #ffffff !important;
+    border-bottom: 2px solid #ffffff !important;;
+}
+.ListaEventosIcon { text-align: center; color:#fff; font: normal normal normal 16px/1 FontAwesome; font-size: inherit;
+text-decoration: inherit; text-rendering: optimizeLegibility; text-transform: none; -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased; font-smoothing: antialiased; }
+.ListaEventosIcon:before { content: "\f26c"; }
+.MenuAjustesIcon{ text-align: center; color:#fff; font: normal normal normal 16px/1 FontAwesome; font-size: inherit;
+text-decoration: inherit; text-rendering: optimizeLegibility; text-transform: none; -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased; font-smoothing: antialiased; }
+.MenuAjustesIcon:before { content: "\f303"; }
+.ImprimirIcon{ text-align: center; color:#fff; font: normal normal normal 16px/1 FontAwesome; font-size: inherit;
+text-decoration: inherit; text-rendering: optimizeLegibility; text-transform: none; -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased; font-smoothing: antialiased; }
+.ImprimirIcon:before { content: "\f2c7"; }
+.MapaBaseIcon{ text-align: center; color:#fff; font: normal normal normal 16px/1 FontAwesome; font-size: inherit;
+text-decoration: inherit; text-rendering: optimizeLegibility; text-transform: none; -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased; font-smoothing: antialiased; }
+.MapaBaseIcon:before { content: "\f27c"; }
+.ListaInfoIcon{ text-align: center; color:#fff; font: normal normal normal 16px/1 FontAwesome; font-size: inherit;
+text-decoration: inherit; text-rendering: optimizeLegibility; text-transform: none; -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased; font-smoothing: antialiased; }
+.ListaInfoIcon:before { content: "\f24b"; }
+
+
+.dijitIcon{ margin-right: 5px; width: 32px; font-size: 32px; display: inline-block; text-align: right; 
+vertical-align: middle; }
+
+.NavToggle{
+    background-image: url("../images/nav-toggle.svg");
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+.claro .MenuDesplegable .dijitPopup{ font-size: large; }
+.claro .dijitButton .dijitButtonNode, .claro .dijitDropDownButton .dijitButtonNode { border: none; }
+.claro .dijitContentPane{
+    padding: 0.5px;!important
+}
+.claro .MapaBaseClass .dijitArrowButtonInner {
+    display: none !important;
+}
+
+.field-UNION{ width:60% !important; }
+.field-PROFUNDIDAD{ width:20% !important; }
+.field-MAGNITUDTEXT{ width:20% !important; }
+
+.esri .esri-feature-table .dijitMenuItemSelected { color: #ffffff !important; background-color: #535353!important; }
+.esriViewPopup .header { color: #667F00 !important; font-size: 18px; font-weight: bold; }
+.claro .dijitTitlePaneTitle,.claro .dijitTitlePaneTitleOpen, .claro .dijitTitlePaneTitleFixedOpen, 
+.claro .dijitTitlePaneHover, .claro .dijitTitlePaneTitleFixedClose { background-color: #667F00; color: #fff;
+background-image:none !important; }
+.esri-feature-table { font-family: verdana; font-size: 12px; height: 100%; width: 100%; text-align: center !important; }
+.esri-feature-table-column-header-title { display: block; float: inherit !important; text-align: center !important; }
+.dj_webkit .claro .dijitTextBox .dijitInputInner{ width:100%; }
+#myform .dijitButton .dijitButtonNode{ padding:0; }
+#myform .dijitButtonText{ padding:6px; }
+.Shakemap{border-radius:50%;height:30px;width:30px;text-align:center;line-height:30px; display: inline-block;}
+.ShakemapTitulo{line-height:30px !important; }
+.shakeMapI{background-color:RGB(234,236,255);}
+.shakeMapII{background-color:RGB(176,218,246);}
+.shakeMapIII{background-color:RGB(176,218,246);}
+.shakeMapIV{background-color:RGB(123,255,210);}
+.shakeMapV{background-color:RGB(152,254,109);}
+.shakeMapVI{background-color:RGB(254,231,22);}
+.shakeMapVII{background-color:RGB(254,173,19);color:#fff;}
+.shakeMapVIII{background-color:RGB(254,101,0);color:#fff;}
+.shakeMapIX{background-color:RGB(235,3,0);color:#fff;}
+
+
+
