@@ -101,6 +101,25 @@ require([
     var url = "";
     //var url_UltimoSismo = "http://seiscompws.sgc.gov.co:16830/events";
     var url_UltimoSismo = "https://sismos.sgc.gov.co/json/events.json";
+    function Get(yourUrl){
+        var Httpreq = new XMLHttpRequest(); // a new request
+        Httpreq.open("GET",yourUrl,false);
+        Httpreq.send(null);
+        return Httpreq.responseText;
+    }
+    try {
+        var json_obj = JSON.parse(Get(url_UltimoSismo));
+        console.log('Sintaxis Correcta');
+    }
+    catch (error) {
+        url_UltimoSismo = "https://srvags.sgc.gov.co/VolcanesSGCJson/Volcanes/sismos/events.json";
+        if(error instanceof SyntaxError) {
+            var mensaje = error.message;
+            console.log('ERROR EN LA SINTAXIS:', mensaje);
+        } else {
+            throw error; // si es otro error, que lo siga lanzando
+        }
+    }
     //var url_UltimoSismo ="images/prueba.json"
     var template = new PopupTemplate({
         "title": '<b>{DESCRIPCION}</b>',
